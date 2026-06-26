@@ -1,3 +1,5 @@
+import '../styles/libros.css'
+
 function Libros() {
     return (
         <div>
