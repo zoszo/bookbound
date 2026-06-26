@@ -32,17 +32,19 @@
     margin: 0;
     font-family: climate-crisis, sans-serif;
     letter-spacing: 1px;
-    font-weight: 400;
-    font-variation-settings:
-    "YEAR" 1979;
-    font-style: normal;
   }
   
-  .navbar-logo p {
-    color: #edfeec;
-    margin: 0;
-    font-size: 0.9rem;
-    opacity: 0.8;
+  .navbar-logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+
+  .navbar-logo-link:hover,
+  .navbar-logo-link:visited,
+  .navbar-logo-link:active {
+    text-decoration: none;
+    color: inherit;
   }
   
   /* Navegación */
