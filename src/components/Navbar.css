@@ -53,16 +53,14 @@
   }
   
   .nav-item {
-    background: none;
-    border: none;
+    position: relative;
+    text-decoration: none;
     color: #ffffff;
     font-size: 1rem;
-    font-family: 'Cormorant Garamond', serif;
-    cursor: pointer;
-    padding: 0;
-    position: relative;
-    transition: color 0.3s ease;
     font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
   }
   
   /* Línea subrayada al pasar el mouse */

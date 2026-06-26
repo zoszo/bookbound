@@ -1,47 +1,54 @@
-import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 
-function Navbar({ onSeccionChange }) {
-  const [seccionActiva, setSeccionActiva] = useState('libros')
-
-  const handleClick = (seccion) => {
-    setSeccionActiva(seccion)
-    onSeccionChange(seccion)
-  }
-
+function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-content">
+
         <div className="navbar-logo">
-          <h1>BOOKBOUND</h1>
+          <NavLink to="/" className="logo-link">
+            <h1>BOOKBOUND</h1>
+          </NavLink>
         </div>
 
         <div className="navbar-nav">
-          <button 
-            className={`nav-item ${seccionActiva === 'libros' ? 'activo' : ''}`}
-            onClick={() => handleClick('libros')}
+
+          <NavLink
+            to="/libros"
+            className={({ isActive }) =>
+              isActive ? "nav-item activo" : "nav-item"
+            }
           >
             Libros
-          </button>
-          <button 
-            className={`nav-item ${seccionActiva === 'reseñas' ? 'activo' : ''}`}
-            onClick={() => handleClick('reseñas')}
+          </NavLink>
+
+          <NavLink
+            to="/resenas"
+            className={({ isActive }) =>
+              isActive ? "nav-item activo" : "nav-item"
+            }
           >
             Reseñas
-          </button>
-          <button 
-            className={`nav-item ${seccionActiva === 'intercambios' ? 'activo' : ''}`}
-            onClick={() => handleClick('intercambios')}
+          </NavLink>
+
+          <NavLink
+            to="/intercambios"
+            className={({ isActive }) =>
+              isActive ? "nav-item activo" : "nav-item"
+            }
           >
             Intercambios
-          </button>
+          </NavLink>
+
         </div>
 
         <button className="btn-menu" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+
       </div>
     </nav>
   )

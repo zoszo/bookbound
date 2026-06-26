@@ -1,21 +1,24 @@
+import './App.css'
 import Navbar from './components/Navbar'
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import Libros from './pages/Libros'
+import Resenas from './pages/Resenas'
+import Intercambios from './pages/Intercambios'
 
 function App() {
-  const [seccionActiva, setSeccionActiva] = useState('libros')
-
-  const handleSeccionChange = (seccion) => {
-    setSeccionActiva(seccion)
-  }
-
   return (
-    <div>
-      <Navbar onSeccionChange={handleSeccionChange} />
-  
-      {seccionActiva === 'libros' && <div>Contenido de Libros</div>}
-      {seccionActiva === 'reseñas' && <div>Contenido de Reseñas</div>}
-      {seccionActiva === 'intercambios' && <div>Contenido de Intercambios</div>}
-    </div>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/libros" element={<Libros />} />
+        <Route path="/reseñas" element={<Resenas />} />
+        <Route path="/intercambios" element={<Intercambios />} />
+      </Routes>
+    </>
   )
 }
 
