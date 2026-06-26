@@ -18,5 +18,106 @@
         { "id": "3", "name": "Perfil", "link": "/profile" }
       ],
       "img": "menu_item.png"
-    }
+    },
+      "libros": [
+        {
+          "id": 1,
+          "titulo": "Cris & Cris",
+          "autor": "María Felicitas Jaime",
+          "portada": "/public/libros/Cris-&-Cris.webp",
+          "genero": "Romance",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 2,
+          "titulo": "Amanecer en la cosecha",
+          "autor": "Suzanne Collins",
+          "portada": "/public/libros/HG-Amanecer.webp",
+          "genero": "Distopía",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 3,
+          "titulo": "Balada de pájaros cantores y serpientes",
+          "autor": "Suzanne Collins",
+          "portada": "/public/libros/HG-Balada.webp",
+          "genero": "Distopía",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 4,
+          "titulo": "Los juegos del hambre",
+          "autor": "Suzanne Collins",
+          "portada": "/public/libros/Los-juegos-del-hambre.webp",
+          "genero": "Distopía",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 5,
+          "titulo": "En llamas",
+          "autor": "Suzanne Collins",
+          "portada": "/public/libros/HG-En-llamas.webp",
+          "genero": "Distopía",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 6,
+          "titulo": "Sinsajo",
+          "autor": "Suzanne Collins",
+          "portada": "/public/libros/HG-Sinsajo.webp",
+          "genero": "Distopía",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 7,
+          "titulo": "Los siete maridos de Evelyn Hugo",
+          "autor": "Taylor Jenkins Reid",
+          "portada": "/public/libros/Los-siete-maridos-de-Evelyn-Hugo.webp",
+          "genero": "Drama",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 8,
+          "titulo": "Pasiones",
+          "autor": "María Felicitas Jaime",
+          "portada": "/public/libros/Pasiones.webp",
+          "genero": "Romance",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 9,
+          "titulo": "Otra",
+          "autor": "María Felicitas Jaime",
+          "portada": "/public/libros/Una-mirada.jpg",
+          "genero": "Romance",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 10,
+          "titulo": "Verano sin anzuelos",
+          "autor": "Corina Margarita",
+          "portada": "/public/libros/Verano-sin-anzuelos.webp",
+          "genero": "Romance",
+          "sinopsis": "",
+          "estado": "Disponible"
+        },
+        {
+          "id": 11,
+          "titulo": "Yo, Adolescente",
+          "autor": "Zabo",
+          "portada": "/public/libros/Yo-Adolescente.webp",
+          "genero": "Autobiografía",
+          "sinopsis": "",
+          "estado": "Disponible"
+        }
+      ]
   }

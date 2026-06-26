@@ -1,4 +1,4 @@
-import '../styles/libros.css'
+import './libros.css'
 
 function Libros() {
     return (
