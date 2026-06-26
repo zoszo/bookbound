@@ -11,8 +11,7 @@ function App() {
   return (
     <div>
       <Navbar onSeccionChange={handleSeccionChange} />
-      
-      {/* Aquí va el contenido según la sección activa */}
+  
       {seccionActiva === 'libros' && <div>Contenido de Libros</div>}
       {seccionActiva === 'reseñas' && <div>Contenido de Reseñas</div>}
       {seccionActiva === 'intercambios' && <div>Contenido de Intercambios</div>}
