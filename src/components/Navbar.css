@@ -1,0 +1,152 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2d1f16; /* Marrón oscuro */
+    color: #edfeec; /* Crema */
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(45, 31, 22, 0.3);
+  }
+  
+  .navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar-logo h1 {
+    font-size: 1.8rem;
+    color: #7cc76b; /* Verde */
+    margin: 0;
+    font-family: climate-crisis, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-variation-settings:
+    "YEAR" 1979;
+    font-style: normal;
+  }
+  
+  .navbar-logo p {
+    color: #edfeec;
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* Navegación */
+  .navbar-nav {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .nav-item {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  /* Línea subrayada al pasar el mouse */
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #cff3ce;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #cff3ce;
+  }
+  
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* Cuando está activo */
+  .nav-item.activo {
+    color: #cff3ce;
+  }
+  
+  .nav-item.activo::after {
+    transform: scaleX(1);
+  }
+  
+  /* Botón de menú */
+  .btn-menu {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #eef7ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  .btn-menu span {
+    width: 25px;
+    height: 2px;
+    background-color: #7CC76B;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+  }
+  
+  .btn-menu:hover {
+    background-color: #e3f2dc;
+    transform: scale(1.05);
+  }
+  
+  .btn-menu:active {
+    transform: scale(0.96);
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar-content {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 15px 20px;
+    }
+  
+    .navbar-nav {
+      order: 3;
+      width: 100%;
+      gap: 15px;
+      margin-top: 15px;
+    }
+  
+    .navbar-logo {
+      order: 1;
+    }
+  
+    .btn-menu {
+      order: 2;
+    }
+  }

@@ -1,0 +1,22 @@
+{
+    "posts": [
+      { "id": "1", "title": "a title", "views": 100 },
+      { "id": "2", "title": "another title", "views": 200 }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    },
+    "Navbar": {
+      "logo": "BOOKBOUND",
+      "navItems": [
+        { "id": "1", "name": "Inicio", "link": "/" },
+        { "id": "2", "name": "Explorar", "link": "/explore" },
+        { "id": "3", "name": "Perfil", "link": "/profile" }
+      ],
+      "img": "menu_item.png"
+    }
+  }
