@@ -1,7 +1,12 @@
+import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom'
 import './Navbar_Privada.css'
+import UserPanel from './UserPanel'
 
 function Navbar_Privada() {
+
+  const [menuAbierto, setMenuAbierto] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -15,7 +20,7 @@ function Navbar_Privada() {
         <div className="navbar-nav">
 
           <NavLink
-            to="/Libros_pag"
+            to="/Libros"
             className={({ isActive }) =>
               isActive ? "nav-item activo" : "nav-item"
             }
