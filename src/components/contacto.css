@@ -1,0 +1,84 @@
+.contacto{
+
+    height:100vh;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+}
+
+/* oscurece un poquito la foto */
+
+.overlay-contacto{
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.18);
+
+    position:relative;
+
+}
+
+/* CONTACT */
+
+.overlay-contacto h2{
+
+    position:absolute;
+
+    left:170px;
+    top:310px;
+
+    font-size:92px;
+
+    color:white;
+
+    font-family:"Cubao Wide", sans-serif;
+
+    letter-spacing:3px;
+
+}
+
+/* Datos */
+
+.datos{
+
+    position:absolute;
+
+    right:170px;
+    top:250px;
+
+    color:white;
+
+}
+
+.dato{
+
+    margin-bottom:55px;
+
+}
+
+.dato span{
+
+    font-size:24px;
+
+    font-style:italic;
+
+    opacity:.9;
+
+}
+
+.dato h3{
+
+    margin-top:12px;
+
+    font-size:55px;
+
+    font-family:"Morisawa Role SerifText", serif;
+
+    font-weight:400;
+
+}

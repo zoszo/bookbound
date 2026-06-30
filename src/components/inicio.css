@@ -1,0 +1,159 @@
+.inicio {
+    height: 100vh;
+
+
+    background-size: cover;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+     
+  background-image: url("../assets/biblioteca.jpg");
+  
+width: 100%;
+
+}
+
+
+ /*animacion negra 1*/ 
+
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: radial-gradient(
+        circle at center,
+        rgba(0,0,0,0.2) 0%,
+        rgba(0,0,0,0.7) 100%
+    );
+
+    z-index: 1;
+}
+
+
+.overlay{
+  position: absolute;
+inset: 0;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    animation: fadeIn 1s ease forwards;
+}
+
+.overlay h1{
+    color:white;
+    font-size:6rem;
+    letter-spacing:5px;
+
+    animation: fadeUp 1s ease forwards;
+}
+
+.overlay p{
+    color:white;
+    font-size:1.3rem;
+    margin-top:20px;
+
+    animation: fadeUp 1s ease 0.3s forwards;
+    opacity: 0;
+
+}
+
+.botones {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+
+  animation: fadeUp 1s ease 0.6s forwards;
+  opacity: 0;
+}
+
+.btn-verde {
+  background: #7cc76b;
+  color: #221712;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+
+    transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.btn-blanco {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+
+    transform: scale(1.05);
+  transition: 0.3s ease;
+
+}
+/*animacion 1, negroo*/
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.overlay h1,
+.overlay p,
+.botones {
+  opacity: 0;
+}
+
+/*animacion 2, marron*/ 
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+.contacto.reveal {
+  transform: scale(1.1);
+}
+ body {
+  margin: 0;
+  padding: 0;
+ 
+  background: #000;
+}

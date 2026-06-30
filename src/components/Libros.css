@@ -1,0 +1,95 @@
+.libros{
+
+    min-height:100vh;
+
+    background:#2d1f16;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-evenly;
+
+    padding:100px;
+
+    gap:80px;
+
+
+}
+
+.libros-imagen{
+
+    flex:1;
+
+}
+
+.libros-imagen img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+.libros-texto{
+
+    flex:1;
+
+    color:white;
+
+}
+
+.libros-texto span{
+
+    color:#7CC76B;
+
+    letter-spacing:2px;
+
+}
+
+.libros-texto h2{
+
+    font-size:55px;
+
+    margin:20px 0;
+
+    line-height:1.1;
+
+}
+
+.libros-texto p{
+
+    color:#d5d5d5;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.libros-texto button{
+
+    background:#7CC76B;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.libros-texto button:hover{
+
+    transform:translateY(-4px);
+
+}
+

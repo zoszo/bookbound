@@ -1,6 +1,6 @@
-import './libros.css'
+import './Libros_pag.css'
 
-function Libros() {
+function Libros_pag() {
     return (
         <div>
             <h1>Libros</h1>
@@ -8,4 +8,4 @@ function Libros() {
     )
 }
 
-export default Libros
+export default Libros_pag

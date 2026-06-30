@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
-import './Navbar.css'
+import './Navbar_Privada.css'
 
-function Navbar() {
+function Navbar_Privada() {
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -15,7 +15,7 @@ function Navbar() {
         <div className="navbar-nav">
 
           <NavLink
-            to="/libros"
+            to="/Libros_pag"
             className={({ isActive }) =>
               isActive ? "nav-item activo" : "nav-item"
             }
@@ -24,7 +24,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
-            to="/resenas"
+            to="/Resenas"
             className={({ isActive }) =>
               isActive ? "nav-item activo" : "nav-item"
             }
@@ -33,7 +33,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
-            to="/intercambios"
+            to="/Intercambios"
             className={({ isActive }) =>
               isActive ? "nav-item activo" : "nav-item"
             }
@@ -43,15 +43,20 @@ function Navbar() {
 
         </div>
 
-        <button className="btn-menu" aria-label="Abrir menú">
+        <button
+          className="btn-menu"
+          onClick={() => setMenuAbierto(!menuAbierto)}
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
+
+        <UserPanel abierto={menuAbierto} />
 
       </div>
     </nav>
   )
 }
 
-export default Navbar
+export default Navbar_Privada
