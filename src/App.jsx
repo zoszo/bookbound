@@ -18,6 +18,7 @@ import registro from './pages/registro'
 
 // Zona privada
 import Libros_pag from './pages/Libros_pag'
+import LibroDetalle from './pages/LibroDetalle'
 import Resenas from './pages/Resenas'
 import Intercambios from './pages/Intercambios'
 
@@ -100,6 +101,18 @@ function App() {
           </>
         }
       />
+
+      {/* LIBRO DETALLE */}
+      <Route
+        path="/libros/:id"
+        element={
+          <>
+            <Navbar_Privada />
+            <LibroDetalle />
+          </>
+        }
+      />
+
 
       {/* RESEÑAS */}
       <Route
